@@ -594,9 +594,10 @@ footer {
         }
 
         .social-media {
-            width: 18px;
+            padding-left: 1px;
+            width: 12px;
             opacity: .6;
-            margin: 8px;
+            margin: 4px;
             transition: all .4s ease;
 
         }
@@ -610,9 +611,10 @@ footer {
 
 
         .social-media2 {
-            width: 24px;
+            padding-right: 1px;
+            width: 20px;
             opacity: .6;
-            margin: 8px;
+            margin: 2px;
             transition: all .4s ease;
         }
 
