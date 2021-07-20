@@ -28,6 +28,7 @@ body {
     padding: 10px;
     text-align: center;
 }
+
 .head-barra {
     width: auto;
     padding: 10px;
@@ -35,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 16px;
 }
 
 .head-barra a {
@@ -63,7 +65,8 @@ body {
 
 
 .logotipo {
-    width: 100px;
+    width: 80px;
+    padding-left: 50px;
 
 }
 
@@ -168,7 +171,7 @@ header nav a {
     font-family: poppins;
 }
 
-.categoria-portfolio{
+.categoria-portfolio {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 29px;
@@ -178,13 +181,14 @@ header nav a {
     font-family: poppins;
 }
 
-.categoria2{
+.categoria2 {
     font-size: 16px;
     color: white;
     text-align: center;
     font-weight: 270;
     font-family: poppins;
 }
+
 .educacion {
     position: relative;
     display: flex;
@@ -556,7 +560,34 @@ footer {
         opacity: 0;
     }
 
+    @media screen and (max-width:780px)and (min-width:1024px) {}
 
+    @media screen and (max-width:480px)and (min-width:780px) {}
+
+    @media screen and (max-width:480px) {
+
+        .head-barra {
+            width: auto;
+            padding: 10px;
+            background: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10px;
+        }
+
+        .head {
+            display: inline-block;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .logotipo {
+            width: 60px;
+            padding-left: 6px;
+
+        }
+    }
 
 
 
