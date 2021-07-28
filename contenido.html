@@ -9,10 +9,10 @@
 
 </head>
 
-<body>
+<body> 
     <div id="particles-js"></div>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="all">
                 <img class="logo" src="img/logo.png" alt="logo">
                 <ul class="menu">
@@ -26,6 +26,14 @@
 
     </header>
     <main>
+       
+       <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+  <span class="fa-stack">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+  </span>
+</a>
+    
         <section class="about" id="about">
             <div class="noticia">
                 <h1 class="categoria"> About me </h1>
@@ -41,15 +49,15 @@
             <div class=educacion>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>2do Año Diseño Grafico </h3>
-                        <p>2020 - Actualidad </p>
-                        <p>Facultad ISEC </p>
+                        <h3>University</h3>
+                        <p>2020 - present</p>
+                        <p>ISEC</p>
                         <p>Buenos Aires, Argentina</p>
                     </div>
                 </div>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>Titulo bachiller </h3>
+                        <h3>Secondary</h3>
                         <p>2013 - 2018</p>
                         <p>Colegio 19 D.E. 18"Dr.Alberto Larroque</p>
                         <p>Buenos Aires, Argentina</p>
@@ -61,7 +69,7 @@
             <div class=educacion>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>Diseño Grafico </h3>
+                        <h3>Graphic design </h3>
                         <p>2019 - 2020 </p>
                         <p>Centro tecnologico de informatica CABA</p>
                         <p>Buenos Aires, Argentina</p>
@@ -69,7 +77,7 @@
                 </div>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>Diseño Web </h3>
+                        <h3>Web design </h3>
                         <p>2019</p>
                         <p> Gobierno de la Cuidad </p>
                         <p>Buenos Aires, Argentina</p>
@@ -77,7 +85,7 @@
                 </div>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>Programación Java</h3>
+                        <h3>Java programming</h3>
                         <p>2019</p>
                         <p>EducaciónIT</p>
                         <p>Buenos Aires, Argentina</p>
@@ -85,7 +93,7 @@
                 </div>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>Reparación Celular</h3>
+                        <h3>Cell Repair</h3>
                         <p>2019</p>
                         <p>Escuela de formación laboral</p>
                         <p>Buenos Aires, Argentina</p>
@@ -96,7 +104,7 @@
             <div class=educacion>
                 <div class="cuadrado">
                     <div class="contenido">
-                        <h3>Escaneo y Clean Up </h3>
+                        <h3>Scan and Clean Up</h3>
                         <p>2019 - 2020 </p>
                         <p>Desplats Animación</p>
                         <p>Buenos Aires, Argentina</p>
@@ -192,6 +200,7 @@
             </div>
         </section>
 
+   
     </main>
     <footer>
         <div class="footer-contenido">
@@ -201,16 +210,16 @@
                 <li><a href="alendesplats@gmail.com"><i class="fa fa-envelope"></i></a></li>
                 <li><a href="https://www.instagram.com/alendesigner_01/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/alain-desplats-2b4111194/"><i class="fa fa-linkedin-square"></i></a></li>
-                <li><a href="tel:01136130394"><i class="fa fa-mobile "></i></a></li>
             </ul>
         </div>
     </footer>
+    
     <!-- JS Particles.js -->
-
     <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
+    
+    <!-- JavaScript -->
 <script type="text/javascript">
         $(document).ready(function() {
             $('.list').click(function() {
@@ -227,5 +236,15 @@
             })
         })
     </script>
-    
+<script type="text/javascript">
+       $(document).ready(function(){ irArriba(); }); //Hacia arriba
+
+function irArriba(){
+  $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
+  });
+  $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
+} 
+    </script>    
 </body></html>
