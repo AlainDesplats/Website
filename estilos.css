@@ -23,13 +23,17 @@ body {
 /* Head */
 /* ------------------------- */
 
-.head {
-    display: inline-block;
+.all2 {
+    width: auto;
     padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0;
 }
 
-.head-barra {
+.all {
     width: auto;
     padding: 10px;
     background: #111;
@@ -39,14 +43,20 @@ body {
     font-size: 16px;
 }
 
-.head-barra a {
+.all a {
     text-decoration: none;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     position: relative;
 }
 
-.head-barra a::after {
+.all li {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.all a::after {
     content: "";
     position: absolute;
     bottom: -6px;
@@ -58,14 +68,12 @@ body {
     transition: width 0.5s;
 }
 
-.head-barra a:hover::after {
+.all a:hover::after {
     width: 100%;
-
 }
 
-
-.logotipo {
-    width: 80px;
+.logo {
+    width: 120px;
     padding-left: 50px;
 
 }
@@ -77,30 +85,100 @@ header nav a {
 
 }
 
+/* ------------------------- */
+/* Menu 2 */
+/* ------------------------- */
+
+
+
 
 /* ------------------------- */
 /* Index */
 /* ------------------------- */
 
+.nombre {
+    text-align: center;
+}
 
 .nombre h1 {
+
     letter-spacing: 1px;
-    text-align: center;
-    z-index: 2;
     font-weight: 100;
     font-family: poppins;
     font-size: 65px;
 }
 
 .nombre p {
+    padding-bottom: 10px;
     font-family: monospace;
     letter-spacing: 1px;
-    text-align: center;
     z-index: 2;
     font-size: 20px;
     color: white;
 }
 
+.nombre a {
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.parpadea {
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
 
 /* Index redes */
 
@@ -153,11 +231,36 @@ header nav a {
 }
 
 /* ------------------------- */
-/* sobre mi */
+/* About me */
+/* ------------------------- */
+
+div.noticia {
+    width: 50%;
+    margin: 80px auto;
+    color: #fff;
+    padding: 15px;
+}
+
+img.izquierda {
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+}
+.noticia p {
+    padding: 90px;  
+}
+
+
+
+/* ------------------------- */
+/* Educacion */
 /* ------------------------- */
 
 .categoria {
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
     font-size: 29px;
     color: white;
     text-align: center;
@@ -196,7 +299,7 @@ header nav a {
     position: relative;
     width: 280px;
     height: 300px;
-    margin: 30px;
+    margin: 15px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
@@ -247,7 +350,7 @@ header nav a {
     padding-bottom: 40px;
     width: 650px;
     height: 350px;
-    margin: 30px;
+    margin: 10px;
     margin-bottom: 45px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -311,11 +414,11 @@ header nav a {
 /* Porfolio */
 /* ------------------------- */
 
-.contenedor-porfolio {
+.portfolio {
     position: flex;
     justify-content: center;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
     margin-bottom: 100px;
 }
 
@@ -367,77 +470,7 @@ header nav a {
     color: #fff;
 }
 
-/* ------------------------- */
-/* Contacto */
-/* ------------------------- */
 
-
-.contacto-body {
-    overflow: hidden;
-
-}
-
-.contacto-main {
-    height: 71vh;
-    width: 90%;
-    margin: 1% auto;
-    min-height: calc(100vh - 100px - 300px);
-
-}
-
-.caja {
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 0 10px;
-
-}
-
-.caja-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 16px 0;
-    border: 0;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px 40px;
-    outline: none;
-    color: #ddd;
-    transition: 0.5s;
-}
-
-.caja-text:focus {
-    box-shadow: 0 0 10px 4px grey;
-}
-
-textarea.caja-text {
-    resize: none;
-    height: 120px;
-}
-
-
-.caja-btn {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 8px;
-    float: right;
-    width: 50px;
-    border: 0;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ddd;
-    padding: 16px 40px;
-    cursor: pointer;
-    transition: 0.5s;
-
-}
-
-.caja-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
 
 /* ------------------------- */
 /* Footer */
@@ -550,7 +583,7 @@ footer {
     }
 
 
-    .contenedor-portfolio {
+    ..porfolio {
         opacity: 0;
     }
 }
@@ -892,3 +925,51 @@ footer {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }

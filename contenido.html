@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About me</title>
+    <title>! Welcome to my website !</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -12,20 +12,30 @@
 <body>
     <div id="particles-js"></div>
     <header>
-        <div class="head-barra">
-            <img class="logotipo" src="img/logo.png" alt="logo">
-            <nav>
-                <ul>
-                    <li class="head"><a href="index.html" class="Activo">Home</a></li>
-                    <li class="head"><a href="curriculum.html">About me</a></li>
-                    <li class="head"><a href="porfolio.html">Portfolio</a></li>
-                    <li class="head"><a href="contacto.html">Contact</a></li>
+        <nav>
+            <div class="all">
+                <img class="logo" src="img/logo.png" alt="logo">
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About me</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
 
+    </header>
     <main>
+        <section class="about" id="about">
+            <div class="noticia">
+                <h1 class="categoria"> About me </h1>
+                <img class="izquierda" src="img/e.jpg" alt="">
+                <p> My name is Alain Desplats I love making designs; draw, edit, make logos and banners. I specialize in doing different and fun things.
+                In my free time I love to watch sports especially soccer but if I'm not doing that I am designing something new so that I can continue learning day by day </p>
+            </div>
+        </section>
+
+
         <section class="education">
             <h1 class="categoria"> Education </h1>
             <div class=educacion>
@@ -96,9 +106,8 @@
         </section>
 
 
-
-        <section class="programs">
-            <h2 class="categoria">Programs</h2>
+        <section class="programs" id="skills">
+            <h1 class="categoria">Skills</h1>
 
             <div class="barras">
                 <div class="barras-contenedor">
@@ -155,8 +164,35 @@
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="portfolio" id="portfolio">
+            <h1 class="categoria">All my designs</h1>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="banners">Banners</li>
+                <li class="list" data-filter="logos">Logos</li>
+                <li class="list" data-filter="portraits">Portraits</li>
+                <li class="list" data-filter="drawings">Drawings</li>
+            </ul>
+
+            <div class="product">
+                <div class="itemBox banners"><img src="img/o1.jpg"> </div>
+                <div class="itemBox banners"><img src="img/o2.jpg"> </div>
+                <div class="itemBox banners"><img src="img/o3.jpg"> </div>
+                <div class="itemBox banners"><img src="img/o4.jpg"> </div>
+                <div class="itemBox banners"><img src="img/o5.jpg"> </div>
+                <div class="itemBox banners"><img src="img/o6.jpg"> </div>
+                <div class="itemBox logos"><img src="img/l1.jpg"> </div>
+                <div class="itemBox logos"><img src="img/l3.jpg"> </div>
+                <div class="itemBox portraits"><img src="img/l2.jpg"> </div>
+                <div class="itemBox drawings"><img src="img/l4.jpg"> </div>
+                <div class="itemBox drawings"><img src="img/l5.jpg"> </div>
+                <div class="itemBox drawings"><img src="img/l6.jpg"> </div>
+
+            </div>
+        </section>
+
+    </main>
     <footer>
         <div class="footer-contenido">
             <h3>Thanks for watching</h3>
@@ -169,8 +205,27 @@
             </ul>
         </div>
     </footer>
+    <!-- JS Particles.js -->
 
     <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+        $(document).ready(function() {
+            $('.list').click(function() {
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itemBox').show('1000');
+                } else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+            $('.list').click(function() {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        })
+    </script>
+    
 </body></html>
