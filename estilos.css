@@ -23,7 +23,7 @@ body {
 /* Head */
 /* ------------------------- */
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -197,6 +197,7 @@ header nav a {
 }
 
 .main-index {
+    padding-top: 40px;
     width: 90%;
     margin: 15% auto;
     display: flex;
@@ -245,7 +246,7 @@ header nav a {
 
 div.noticia {
     width: 50%;
-    margin: 80px auto;
+    margin: 100px auto;
     color: #fff;
     padding: 15px;
 }
@@ -257,8 +258,9 @@ img.izquierda {
     height: 250px;
     border-radius: 50px;
 }
+
 .noticia p {
-    padding: 90px;  
+    padding: 90px;
 }
 
 
@@ -484,16 +486,16 @@ img.izquierda {
 /* Up */
 /* ------------------------- */
 
-.ir-arriba{
-  display:none;
-  background-repeat:no-repeat;
-  font-size:20px;
-  color:black;
-  cursor:pointer;
-  position:fixed;
-  bottom:10px;
-  right:10px;
-  z-index:2;
+.ir-arriba {
+    display: none;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
 }
 
 /* ------------------------- */
@@ -587,413 +589,50 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
-    .social-links {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        text-align: center;
+@media only screen and (min-width:100px) and (max-width:1240px) {
+
+    div.noticia {
+        width: 80%;
+        margin: 100px auto;
+        color: #fff;
+        padding: 15px;
     }
 
-    .social-links2 {
-        opacity: 0;
+    img.izquierda {
+        float: left;
+        margin-right: 20px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
     }
 
-    .nombre {
-        flex-direction: row;
-        align-content: center;
-        text-align: center;
-        margin: auto;
+    .noticia p {
+        padding: 90px;
     }
 
 
-    ..porfolio {
-        opacity: 0;
-    }
 }
 
-@media screen and (max-width:780px)and (min-width:1024px) {
-    .head-barra {
-        width: auto;
-        padding: 10px;
-        background: #111;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 10px;
+/* @media only screen and (max-width:300px) and (min-width:768px){
+
+    div.noticia {
+        width: 80%;
+        margin: 100px auto;
+        color: #fff;
+        padding: 15px;
     }
 
-    .head {
-        display: inline-block;
-        padding: 0px;
-        text-align: center;
+    img.izquierda {
+        float: left;
+        margin-right: 20px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
     }
 
-    .logotipo {
-        width: 60px;
-        padding-left: 6px;
-
-    }
-
-
-
-    .main-index {
-        width: 10;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .social-media {
-        padding-left: 1px;
-        width: 12px;
-        opacity: .6;
-        margin: 4px;
-        transition: all .4s ease;
-
-    }
-
-
-    .social-links {
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-    }
-
-
-    .social-media2 {
-        padding-right: 1px;
-        width: 20px;
-        opacity: .6;
-        margin: 2px;
-        transition: all .4s ease;
-    }
-
-    .nombre h1 {
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-weight: 100;
-        font-family: poppins;
-        font-size: 30px;
-    }
-
-    .nombre p {
-        font-family: monospace;
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
+    .noticia p {
         font-size: 12px;
-        color: white;
     }
 
 }
-
-@media screen and (max-width:480px)and (min-width:780px) {
-    .head-barra {
-        width: auto;
-        padding: 10px;
-        background: #111;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 10px;
-    }
-
-    .head {
-        display: inline-block;
-        padding: 0px;
-        text-align: center;
-    }
-
-    .logotipo {
-        width: 60px;
-        padding-left: 6px;
-
-    }
-
-
-
-    .main-index {
-        width: 10;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .social-media {
-        padding-left: 1px;
-        width: 12px;
-        opacity: .6;
-        margin: 4px;
-        transition: all .4s ease;
-
-    }
-
-
-    .social-links {
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-    }
-
-
-    .social-media2 {
-        padding-right: 1px;
-        width: 20px;
-        opacity: .6;
-        margin: 2px;
-        transition: all .4s ease;
-    }
-
-    .nombre h1 {
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-weight: 100;
-        font-family: poppins;
-        font-size: 30px;
-    }
-
-    .nombre p {
-        font-family: monospace;
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-size: 12px;
-        color: white;
-    }
-
-}
-
-@media screen and (max-width:480px) {
-    .head-barra {
-        width: auto;
-        padding: 10px;
-        background: #111;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 10px;
-    }
-
-    .head {
-        display: inline-block;
-        padding: 0px;
-        text-align: center;
-    }
-
-    .logotipo {
-        width: 60px;
-        padding-left: 6px;
-
-    }
-
-
-
-    .main-index {
-        width: 10;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .social-media {
-        padding-left: 1px;
-        width: 12px;
-        opacity: .6;
-        margin: 4px;
-        transition: all .4s ease;
-
-    }
-
-
-    .social-links {
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-    }
-
-
-    .social-media2 {
-        padding-right: 1px;
-        width: 20px;
-        opacity: .6;
-        margin: 2px;
-        transition: all .4s ease;
-    }
-
-    .nombre h1 {
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-weight: 100;
-        font-family: poppins;
-        font-size: 30px;
-    }
-
-    .nombre p {
-        font-family: monospace;
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-size: 12px;
-        color: white;
-    }
-
-}
-
-@media screen and (max-width:200px) {
-
-    .head-barra {
-        width: auto;
-        padding: 10px;
-        background: #111;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 10px;
-    }
-
-    .head {
-        display: inline-block;
-        padding: 0px;
-        text-align: center;
-    }
-
-    .logotipo {
-        width: 60px;
-        padding-left: 6px;
-
-    }
-
-
-
-    .main-index {
-        width: 10;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .social-media {
-        padding-left: 1px;
-        width: 12px;
-        opacity: .6;
-        margin: 4px;
-        transition: all .4s ease;
-
-    }
-
-
-    .social-links {
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-    }
-
-
-    .social-media2 {
-        padding-right: 1px;
-        width: 20px;
-        opacity: .6;
-        margin: 2px;
-        transition: all .4s ease;
-    }
-
-    .nombre h1 {
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-weight: 100;
-        font-family: poppins;
-        font-size: 30px;
-    }
-
-    .nombre p {
-        font-family: monospace;
-        letter-spacing: 1px;
-        text-align: center;
-        z-index: 2;
-        font-size: 12px;
-        color: white;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 947px) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
-    }
-
-    .menu-btn i.active:before {
-        content: "\f00d";
-    }
-
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-
-    .navbar .menu.active {
-        left: 0;
-    }
-
-    .navbar .menu li {
-        display: block;
-    }
-
-    .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
+*/
