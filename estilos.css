@@ -244,26 +244,32 @@ header nav a {
 /* About me */
 /* ------------------------- */
 
-div.noticia {
-    width: 50%;
-    margin: 100px auto;
+.about {
     color: #fff;
-    padding: 15px;
+    margin-top: 120px;
+}
+
+.group {
+    align-items: center;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.group p {
+    padding: 115px;
+    margin-right: 190px;
+    margin-left: 190px;
 }
 
 img.izquierda {
+    margin-left: 250px;
     float: left;
-    margin-right: 20px;
+    padding: 20px;
+    padding-top: 50px;
     width: 250px;
     height: 250px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
-
-.noticia p {
-    padding: 90px;
-}
-
-
 
 /* ------------------------- */
 /* Educacion */
@@ -589,7 +595,70 @@ footer {
 }
 
 
-@media only screen and (min-width:100px) and (max-width:1240px) {
+
+/* @media only screen and (max-width:1920px) {
+
+    .about {
+        color: red;
+        margin-top: 120px;
+    }
+
+    .group {
+        margin: 10px;
+        vertical-align: middle;
+    }
+
+    .group p {
+        padding-top: 70px;
+        padding-left: 20px;
+        margin-right: 500px;
+        margin-left: 500px;
+    }
+
+    img.izquierda {
+        margin-left: 500px;
+        float: left;
+        padding: 20px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
+    }
+
+}
+
+@media only screen and (max-width:1240px) {
+
+    .about {
+        color: white;
+        margin-top: 120px;
+    }
+
+    .group {
+        margin: 10px;
+        vertical-align: middle;
+    }
+
+    .group p {
+        padding-top: 80px;
+        padding-bottom: 90px;
+        margin-right: 190px;
+        margin-left: 190px;
+    }
+
+    img.izquierda {
+        margin-left: 250px;
+        float: left;
+        padding: 20px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
+    }
+
+}
+
+
+
+/* @media only screen and (max-width:1240px) and (min-width:720px) {
 
     div.noticia {
         width: 80%;
@@ -607,13 +676,13 @@ footer {
     }
 
     .noticia p {
-        padding: 90px;
+        padding: 70px;
     }
 
 
 }
 
-/* @media only screen and (max-width:300px) and (min-width:768px){
+ @media only screen and (max-width:200px) and (min-width:800px){
 
     div.noticia {
         width: 80%;
@@ -632,7 +701,7 @@ footer {
 
     .noticia p {
         font-size: 12px;
+        padding: 90px;
     }
 
 }
-*/
