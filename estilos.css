@@ -245,30 +245,35 @@ header nav a {
 /* ------------------------- */
 
 .about {
-    color: #fff;
     margin-top: 120px;
 }
 
-.group {
+.cuadrado-about {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-    vertical-align: middle;
 }
 
-.group p {
-    padding: 115px;
-    margin-right: 190px;
-    margin-left: 190px;
+.contenido-about {
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
 }
 
 img.izquierda {
-    margin-left: 250px;
-    float: left;
-    padding: 20px;
-    padding-top: 50px;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
     width: 250px;
     height: 250px;
-    border-radius: 50%;
 }
 
 /* ------------------------- */

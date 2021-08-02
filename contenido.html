@@ -9,7 +9,7 @@
 
 </head>
 
-<body> 
+<body>
     <div id="particles-js"></div>
     <header>
         <nav class="navbar">
@@ -26,21 +26,23 @@
 
     </header>
     <main>
-       
-       <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
-  <span class="fa-stack">
-    <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-  </span>
-</a>
-    
-        <section class="about" id="about"> 
-                <h1 class="categoria"> About me </h1>
-                <div class="group">
-                <img class="izquierda" src="img/e.jpg" alt="">
-                <p> My name is Alain Desplats I love making designs; draw, edit, make logos and banners.
-                I specialize in doing different and fun things.
-                In my free time I love to watch sports especially soccer but if I'm not doing that I am designing something new so that I can continue learning day by day </p>
+
+        <a class="ir-arriba" javascript:void(0) title="Volver arriba">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+
+        <section class="about" id="about">
+            <h1 class="categoria"> About me </h1>
+            <div class=educacion>
+                <div class="cuadrado-about">
+                    <img class="izquierda" src="img/e.jpg" alt="">
+                        <p> My name is Alain Desplats I love making designs; draw, edit, make logos and banners.
+                            I specialize in doing different and fun things.
+                            In my free time I love to watch sports especially soccer but if I'm not doing that I am designing something new so that I can continue learning day by day </p>
+                    </div>
             </div>
         </section>
 
@@ -213,12 +215,12 @@
                 <div class="itemBox jobs"><img src="img/a3.jpg"> </div>
                 <div class="itemBox jobs"><img src="img/a4.jpg"> </div>
                 <div class="itemBox jobs"><img src="img/a5.jpg"> </div>
-                
+
 
             </div>
         </section>
 
-   
+
     </main>
     <footer>
         <div class="footer-contenido">
@@ -231,14 +233,14 @@
             </ul>
         </div>
     </footer>
-    
+
     <!-- JS Particles.js -->
     <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+
     <!-- JavaScript -->
-<script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function() {
             $('.list').click(function() {
                 const value = $(this).attr('data-filter');
@@ -254,15 +256,29 @@
             })
         })
     </script>
-<script type="text/javascript">
-       $(document).ready(function(){ irArriba(); }); //Hacia arriba
+    <script type="text/javascript">
+        $(document).ready(function() {
+            irArriba();
+        }); //Hacia arriba
 
-function irArriba(){
-  $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
-  });
-  $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
-} 
-    </script>    
+        function irArriba() {
+            $('.ir-arriba').click(function() {
+                $('body,html').animate({
+                    scrollTop: '0px'
+                }, 1000);
+            });
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(600);
+                } else {
+                    $('.ir-arriba').slideUp(600);
+                }
+            });
+            $('.ir-abajo').click(function() {
+                $('body,html').animate({
+                    scrollTop: '1000px'
+                }, 1000);
+            });
+        }
+    </script>
 </body></html>
