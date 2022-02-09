@@ -132,6 +132,7 @@ header nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    color: cyan;
 }
 
 .parpadea {
@@ -468,26 +469,146 @@ img.izquierda {
     flex-wrap: wrap;
 }
 
-.product .itemBox {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 5px;
-}
 
-.product .itemBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .portfolio ul li:hover {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
+/* ------------------------- */
+/* Porfolio PAGINA */
+/* ------------------------- */
+
+.cuadrado-portfolio{
+    position: relative;
+    width: 700px;
+    height: 200px;
+    margin: 15px;
+    margin-top: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrado-portfolio p {  
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: poppins;
+    font-size: 18px;
+    margin: 50px;
+}
+
+/* ------------------------- */
+/* Porfolio Menu */
+/* ------------------------- */
+
+.menu-portfolio{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-portfolio h1 {
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: poppins;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.menu-portfolio a {
+    font-family: monospace;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cyan;
+}
+/* ------------------------- */
+/* Porfolio GALERIAAAA */
+/* ------------------------- */
+
+
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+    
+}
+
+.itemBox {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.itemBox:hover img { 
+  transform: scale(1.1);
+}
+
+.itemBox:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.itemBox:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.itemBox:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
 
 
 /* ------------------------- */
@@ -621,6 +742,7 @@ footer {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    color: cyan;
 }
     .social-media{
         width: 20px;
